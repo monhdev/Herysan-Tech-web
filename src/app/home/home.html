@@ -1,0 +1,40 @@
+<div class="home">
+  <div [class]="selectedComponent">
+    <div class="header">
+      <div class="headerup">
+        <img src="../LOGO-HERYSAN.png" alt="Logo Herysan" width="100">
+        <h1>HERYSAN</h1>
+        <h2>Technologies</h2>
+      </div>
+      <div class="headerdown">
+        <button (click)="selectedComponent='component6'">Inicio</button>
+        <button (click)="selectedComponent='component1'">Hardware</button>
+        <button (click)="selectedComponent='component2'">Software</button>
+        <button (click)="selectedComponent='component3'">Galeria</button>
+        <button (click)="selectedComponent='component5'">Quienes somos</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="component-container" [ngSwitch]="selectedComponent">
+        <app-hardware *ngSwitchCase="'component1'"></app-hardware>
+        <app-software *ngSwitchCase="'component2'"></app-software>
+        <app-carousel *ngSwitchCase="'component3'"></app-carousel>
+        <app-scroll *ngSwitchCase="'component5'"></app-scroll>
+        <div *ngSwitchDefault class="placeholder">
+          <div class="texto-logo">
+            <div>
+              <p>En HERYSAN Tecnologies nos sentimos orgullosos de ofrecer soluciones tecnologicas a medida de las necesidades de nuestros clientes, poniendo a su disposición un equipo altamente cualificado en soluciones tanto de hardware como de software.</p>
+              <img  class="grupo" src="../grupo_de_gente.png" alt="equipo_HerySan">
+            </div>
+            <img class="logo" src="../LOGO-HERYSAN.png" alt="Logo Herysan">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+      <p>© 2025 HERYSAN Technologies. Todos los derechos reservados.</p>
+  </div>
+</div>

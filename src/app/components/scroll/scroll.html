@@ -1,0 +1,61 @@
+<div class="scroll-reveal-container">
+
+
+
+  <!-- history Section Nuestra historia-->
+  <section class="history-section">
+    <div class="history-content fade-in-up" #animatedElement>
+      <h1 class="history-title">Nuestra Historia</h1>
+      <p class="history-subtitle">Herysan es una empresa familiar que comenzó su andadura como un pequeño proyecto impulsado por la pasión por la tecnología y el desarrollo digital.
+        En sus primeros años, se especializó en la creación de páginas web y aplicaciones para Android, ofreciendo soluciones personalizadas a pequeños negocios locales que buscaban dar el salto al mundo online. Con el tiempo, y gracias a la confianza de sus clientes, amplió sus servicios al montaje y reparación de ordenadores, combinando la innovación del software con la solidez del hardware. Esta evolución natural le permitió consolidarse como un referente cercano y versátil, capaz de cubrir las necesidades tecnológicas de sus clientes desde el diseño digital hasta el mantenimiento técnico.</p>
+      <div class="scroll-indicator"></div>
+      <div class="arrow-down"></div>
+    </div>
+  </section>
+
+
+
+  <!-- Secciones con contenido alternado -->
+  <div class="content-wrapper">
+    <section
+      class="content-section"
+      *ngFor="let section of sections; let i = index"
+      [class.reverse]="section.imagePosition === 'right'"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+
+          <!-- Imagen -->
+          <div class="col-lg-6" [class.order-lg-2]="section.imagePosition === 'right'">
+            <div class="image-container fade-in-left" #animatedElement>
+              <img [src]="section.image" [alt]="section.title" class="section-image">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+          <!-- Texto -->
+          <div class="col-lg-6">
+            <div class="text-content fade-in-right" #animatedElement>
+              <h2 class="section-title">{{ section.title }}</h2>
+              <p class="section-text">{{ section.text }}</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Sección final CTA -->
+  <section class="cta-section">
+    <div class="cta-content fade-in-up" #animatedElement>
+      <h2 class="cta-title">¿Donde encontrarnos?</h2>
+      <p class="cta-text">Visitanos en nuestra oficina situada en la calle Coll i Pujol 73 de Badalona y disfruta viendo a nuestro equipo técnico en acción</p>
+      <a href="https://share.google/zsPyxEeYuimEu1KXU">
+      <img src="../localizacion.png">
+      </a>
+    </div>
+  </section>
+
+</div>

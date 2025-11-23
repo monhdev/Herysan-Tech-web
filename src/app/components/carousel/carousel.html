@@ -1,0 +1,75 @@
+<div class="container my-5">
+  <br>
+  <h2 class="text-center mb-4">Galería de Fotos</h2>
+
+  <!-- Carrusel con efecto 3D -->
+  <div class="carousel-container">
+    <div class="carousel-3d-wrapper">
+
+      <!-- Imagen anterior (izquierda) -->
+      <div class="carousel-slide slide-prev" (click)="prevSlide()">
+        <img [src]="images[getPrevIndex()].src" [alt]="images[getPrevIndex()].alt"
+          class="carousel-image">
+      </div>
+
+      <!-- Imagen actual (centro) -->
+      <div class="carousel-slide slide-active" (click)="openModal(images[currentIndex()])">
+        <img [src]="images[currentIndex()].src" [alt]="images[currentIndex()].alt" class="carousel-image">
+        <div class="carousel-caption">
+          <h3>{{ images[currentIndex()].title }}</h3>
+          <p class="mb-0"><small>Haz click para ampliar</small></p>
+        </div>
+      </div>
+
+      <!-- Imagen siguiente (derecha) -->
+      <div class="carousel-slide slide-next" (click)="nextSlide()">
+        <img [src]="images[getNextIndex()].src" [alt]="images[getNextIndex()].alt" class="carousel-image">
+      </div>
+
+      <!-- Botón anterior -->
+      <button
+        class="carousel-control carousel-control-prev" (click)="prevSlide()" aria-label="Anterior">
+        <span class="carousel-control-icon">‹</span>
+      </button>
+
+      <!-- Botón siguiente -->
+      <button
+        class="carousel-control carousel-control-next" (click)="nextSlide()" aria-label="Siguiente">
+        <span class="carousel-control-icon">›</span>
+      </button>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button
+        *ngFor="let image of images; let i = index"
+        [class.active]="i === currentIndex()"
+        (click)="goToSlide(i)"
+        [attr.aria-label]="'Ir a imagen ' + (i + 1)"
+      ></button>
+    </div>
+  </div>
+
+<!-- Modal para imagen ampliada -->
+<div class="modal-backdrop" *ngIf="showModal()" (click)="closeModal()">
+  <div class="modal-dialog" (click)="$event.stopPropagation()">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ selectedImage()?.title }}</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          (click)="closeModal()"
+          aria-label="Cerrar"
+        >X</button>
+      </div>
+      <div class="modal-body">
+        <img
+          [src]="selectedImage()?.src"
+          [alt]="selectedImage()?.alt"
+          class="modal-image"
+        >
+      </div>
+    </div>
+  </div>
+</div>
