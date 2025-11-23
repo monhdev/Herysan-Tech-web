@@ -15,22 +15,22 @@ interface ImageData {
 export class Carousel {
   images: ImageData[] = [
     {
-      src: '../image1.jpg',
+      src: 'assets/image1.jpg',
       alt: 'Imagen 1',
       title: 'Equipo especializado en hadware'
     },
     {
-      src: '../image2.jpg',
+      src: 'assets/image2.jpg',
       alt: 'Imagen 2',
       title: 'Creación de software personalizado'
     },
     {
-      src: '../image3.jpg',
+      src: 'assets/image3.jpg',
       alt: 'Imagen 3',
       title: 'Tu PC totalmente customizado'
     },
     {
-      src: '../image4.jpg',
+      src: 'assets/image4.jpg',
       alt: 'Imagen 4',
       title: 'apps personalizadas'
     }
