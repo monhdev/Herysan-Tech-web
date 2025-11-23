@@ -1,0 +1,13 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>HerysanTech</title>
+  <base href="https://monhdev.github.io/Herysan-Tech-web/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>body{margin:0;background-image:url("./media/fondo8-ISM6OY47.png")}
+</style><link rel="stylesheet" href="styles-JL36JXQO.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-JL36JXQO.css"></noscript><style ng-app-id="ng">.texto-logo[_ngcontent-ng-c1866394939]{display:flex;flex-direction:row;font-size:2rem;font-weight:700;align-items:center;color:#fff;font-family:Arial,Helvetica,sans-serif}@media (max-width: 992px){.texto-logo[_ngcontent-ng-c1866394939]{flex-direction:column;color:#fff;font-family:Arial,Helvetica,sans-serif}}@media (max-width: 768px){.texto-logo[_ngcontent-ng-c1866394939]{flex-direction:column;color:#fff;font-family:Arial,Helvetica,sans-serif}}</style></head>
+<body><!--nghm-->
+  <app-root ng-version="20.3.13" ngh="1" ng-server-context="ssg"><router-outlet></router-outlet><app-inicio _nghost-ng-c1866394939 ngh="0"><div _ngcontent-ng-c1866394939 class="texto-logo"><p _ngcontent-ng-c1866394939>En HERYSAN Tecnologies nos sentimos orgullosos de ofrecer soluciones tecnologicas a medida de las necesidades de nuestros clientes, poniendo a su disposición un equipo altamente cualificado en soluciones tanto de hardware como de software.</p><img _ngcontent-ng-c1866394939 src="public/grupo_de_gente.png" alt="equipo_HerySan" class="grupo"><img _ngcontent-ng-c1866394939 src="../LOGO-HERYSAN.png" alt="Logo Herysan" class="logo"></div></app-inicio><!----></app-root>
+<script src="main-NEWIWUPK.js" type="module"></script>
+
+<script id="ng-state" type="application/json">{"__nghData__":[{},{"c":{"0":[{"i":"c1866394939","r":1}]}}]}</script></body></html>`;

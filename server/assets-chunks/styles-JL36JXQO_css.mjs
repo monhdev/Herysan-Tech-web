@@ -1,0 +1,2 @@
+export default `body{margin:0;background-image:url("./media/fondo8-ISM6OY47.png")}
+`;

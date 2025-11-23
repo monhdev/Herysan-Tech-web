@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/Herysan-Tech-web": {},
+    "/Herysan-Tech-web/carousel": {},
+    "/Herysan-Tech-web/hardware": {},
+    "/Herysan-Tech-web/inicio": {},
+    "/Herysan-Tech-web/scroll": {},
+    "/Herysan-Tech-web/software": {}
+  }
+}
