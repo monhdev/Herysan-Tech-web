@@ -17,25 +17,25 @@ export class Scroll implements OnInit, OnDestroy {
     {
       title: 'Únete a nuestra comunidad y forma parte de algo extraordinario.',
       text: 'Se parte de la comunidad HerySan, según nuestros clientes algo mas que una empresa, una identidad.',
-      image: '../image1.jpg',
+      image: 'image1.jpg',
       imagePosition: 'left'
     },
     {
       title: 'Innovación constante',
       text: 'Nos adaptamos a los cambios y siempre buscamos nuevas formas de mejorar la experiencia de nuestros usuarios.',
-      image: '../image2.jpg',
+      image: 'image2.jpg',
       imagePosition: 'right'
     },
     {
       title: 'Equipo comprometido',
       text: 'Un grupo de profesionales apasionados trabajando juntos para crear soluciones extraordinarias.',
-      image: '../image3.jpg',
+      image: 'image3.jpg',
       imagePosition: 'left'
     },
     {
       title: 'El futuro es ahora',
       text: 'Continuamos evolucionando y preparándonos para los desafíos del mañana con tecnología de vanguardia.',
-      image: '../image4.jpg',
+      image: 'image4.jpg',
       imagePosition: 'right'
     }
   ];
